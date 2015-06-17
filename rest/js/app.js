@@ -7,8 +7,8 @@ $(function () {
 
     getMessages();
     $("#send").click(function(){
-        var username = $('input[name=username]').attr('value');
-        var message = $('input[name=message]').attr('value');
+        var username = $('input[name=username]').val();
+        var message = $('input[name=message]').val();
         console.log(username)
         console.log('!');
         $.ajax({
